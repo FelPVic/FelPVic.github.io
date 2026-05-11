@@ -205,9 +205,10 @@ section:first-child{padding-top:4.5rem}
    PUBLICATIONS
 ══════════════════════════════════════ */
 .pub-list{display:flex;flex-direction:column;gap:.7rem}
-.pub{padding:.82rem .98rem;background:var(--surf);border:1px solid var(--bdr);border-left:3px solid var(--accent2);border-radius:8px;transition:border-left-color .15s}
-.pub:hover{border-left-color:var(--green)}
-.pub.prep{border-left-color:var(--muted2)}
+.pub{padding:.82rem .98rem;background:var(--surf);border:1px solid var(--bdr);border-left:3px solid var(--accent2);border-radius:8px;transition:border-left-color .15s,box-shadow .15s;display:block;color:inherit;text-decoration:none;cursor:pointer}
+.pub:hover{border-left-color:var(--green);box-shadow:0 0 0 1px var(--green);text-decoration:none}
+.pub.prep{border-left-color:var(--muted2);cursor:default}
+.pub.prep:hover{border-left-color:var(--muted2);box-shadow:none}
 .pub-title{font-size:.84rem;font-weight:500;line-height:1.5;margin-bottom:.28rem}
 .pub-auth{font-size:.72rem;color:var(--muted);margin-bottom:.2rem}
 .pub-auth strong{color:var(--txt)}
@@ -235,10 +236,6 @@ section:first-child{padding-top:4.5rem}
 .repo-card:hover{border-color:var(--accent2)}
 /* ──────────────────────────────────────────────────
    REPO IMAGE SLOTS
-   SMARTDock → assets/smartdock.png
-   PADIF-wf  → assets/padif.png
-   Upload to /assets/ folder in your repo root.
-   Placeholder disappears automatically when image loads.
    ────────────────────────────────────────────────── */
 .repo-img-wrap{width:100%;height:148px;background:var(--surf2);overflow:hidden;position:relative;display:flex;align-items:center;justify-content:center;border-bottom:1px solid var(--bdr)}
 .repo-img{width:100%;height:100%;object-fit:cover;display:none}
@@ -408,11 +405,11 @@ footer{border-top:1px solid var(--bdr);padding:1.6rem 0 2.2rem;text-align:center
       <div class="mt">
         <div class="sh">Research interests</div>
         <div class="int-grid">
-          <div class="int-card"><div class="int-icon">🎯</div><div class="int-title">Virtual screening</div><div class="int-desc">Structure- and ligand-based hit identification in large compound libraries. <a href="#publications">→ publications</a></div></div>
-          <div class="int-card"><div class="int-icon">🧪</div><div class="int-title">Cheminformatics</div><div class="int-desc">Data mining, molecular descriptors, chemical space analysis, and QSAR. <a href="#publications">→ publications</a></div></div>
-          <div class="int-card"><div class="int-icon">🤖</div><div class="int-title">ML in drug discovery</div><div class="int-desc">ML scoring functions, decoy selection, and deep learning for property prediction. <a href="#publications">→ publications</a></div></div>
-          <div class="int-card"><div class="int-icon">🌿</div><div class="int-title">Natural products</div><div class="int-desc">Cheminformatic analysis of NP databases for insecticide and antimicrobial discovery. <a href="#publications">→ publications</a></div></div>
-          <div class="int-card"><div class="int-icon">🧬</div><div class="int-title">Ligand profiling</div><div class="int-desc">Target prediction and polypharmacology for multi-target drug design. <a href="#publications">→ publications</a></div></div>
+          <div class="int-card"><div class="int-icon">🎯</div><div class="int-title">Virtual screening</div><div class="int-desc">Structure- and ligand-based hit identification in large compound libraries.</div></div>
+          <div class="int-card"><div class="int-icon">🧪</div><div class="int-title">Cheminformatics</div><div class="int-desc">Data mining, molecular descriptors, chemical space analysis, and QSAR.</div></div>
+          <div class="int-card"><div class="int-icon">🤖</div><div class="int-title">ML in drug discovery</div><div class="int-desc">ML scoring functions, decoy selection, and deep learning for property prediction.</div></div>
+          <div class="int-card"><div class="int-icon">🌿</div><div class="int-title">Natural products</div><div class="int-desc">Cheminformatic analysis of NP databases for insecticide and antimicrobial discovery.</div></div>
+          <div class="int-card"><div class="int-icon">🧬</div><div class="int-title">Ligand profiling</div><div class="int-desc">Target prediction and polypharmacology for multi-target drug design.</div></div>
           <div class="int-card"><div class="int-icon">⚙️</div><div class="int-title">Molecular dynamics</div><div class="int-desc">GROMACS/AMBER simulations for protein–protein and protein–ligand systems.</div></div>
         </div>
         <div class="tags">
@@ -445,9 +442,8 @@ footer{border-top:1px solid var(--bdr);padding:1.6rem 0 2.2rem;text-align:center
       <div class="sh mt">Awards &amp; fellowships</div>
       <div class="aw-list">
         <div class="aw"><div class="aw-ico">🏆</div><div><div class="aw-title">PhD — <em>Magna Cum Laude</em></div><div class="aw-meta">University of Münster · 2026</div></div></div>
-        <div class="aw"><div class="aw-ico">🎓</div><div><div class="aw-title">MSc Fellowship — Faculty of Sciences</div><div class="aw-meta">National University of Colombia · 2019–2021</div></div></div>
-        <div class="aw"><div class="aw-ico">✈️</div><div><div class="aw-title">AGRO Education Award for Student Travel</div><div class="aw-meta">AGRO Division ACS · Bayer US LLC, Crop Science Division · 2024</div></div></div>
-        <div class="aw"><div class="aw-ico">🌐</div><div><div class="aw-title">International Affairs Student Travel Grant</div><div class="aw-meta">National University of Colombia · 2020</div></div></div>
+        <div class="aw"><div class="aw-ico">✈️</div><div><div class="aw-title">AGRO Education Award for Student Travel — $1,000</div><div class="aw-meta">AGRO Division ACS · Bayer US LLC, Crop Science Division · 2024</div></div></div>
+        <div class="aw"><div class="aw-ico">🌐</div><div><div class="aw-title">International Affairs Student Travel Grant — $1,500</div><div class="aw-meta">National University of Colombia · 2020</div></div></div>
       </div>
 
       <div class="sh mt">Teaching</div>
@@ -477,11 +473,11 @@ footer{border-top:1px solid var(--bdr);padding:1.6rem 0 2.2rem;text-align:center
 
       <div class="ssh ok">Published</div>
       <div class="pub-list">
-        <div class="pub"><div class="pub-title">SMARTDock: a toolkit for the automated development of target-specific scoring functions using bioactivity data <span class="pub-yr">2026</span></div><div class="pub-auth"><strong>Victoria-Muñoz, F.</strong>; Menke, J.; Sánchez-Cruz, N.; Koch, O.</div><div class="pub-jour">Journal of Chemical Information and Modeling</div><div class="pub-doi"><a href="https://doi.org/10.1021/acs.jcim.5c01490" target="_blank" rel="noopener">10.1021/acs.jcim.5c01490</a></div></div>
-        <div class="pub"><div class="pub-title">Antifungal potential of <em>Diaporthe</em> sp. endophytes from Antillean avocado against <em>Fusarium</em> spp.: from organic extracts to in silico chitin synthase inhibition <span class="pub-yr">2026</span></div><div class="pub-auth">Robayo-Medina A.T.; Camargo-Jimenez K.M.; <strong>Victoria-Muñoz F.</strong>; Delgado-Avila W.; Cuca-Suarez L.E.; Ávila-Murillo M.</div><div class="pub-jour">Journal of Fungi · 12, 52</div><div class="pub-doi"><a href="https://doi.org/10.3390/jof12010052" target="_blank" rel="noopener">10.3390/jof12010052</a></div></div>
-        <div class="pub"><div class="pub-title">Harnessing the potential of natural products in insecticide discovery: a cheminformatics approach <span class="pub-yr">2025</span></div><div class="pub-auth"><strong>Victoria-Muñoz F.</strong>; Torres-García A.; Koch O.; Sierra C.; Sánchez-Cruz N.</div><div class="pub-jour">Journal of Agricultural and Food Chemistry · 73, 52, 32995–33004</div><div class="pub-doi"><a href="https://doi.org/10.1021/acs.jafc.5c03553" target="_blank" rel="noopener">10.1021/acs.jafc.5c03553</a></div></div>
-        <div class="pub"><div class="pub-title">Efficient decoy selection to improve virtual screening using machine learning models <span class="pub-yr">2025</span></div><div class="pub-auth"><strong>Victoria-Muñoz, F.</strong>; Menke, J.; Sanchez-Cruz, N. et al.</div><div class="pub-jour">Journal of Cheminformatics · 17, 165</div><div class="pub-doi"><a href="https://doi.org/10.1186/s13321-025-01107-z" target="_blank" rel="noopener">10.1186/s13321-025-01107-z</a></div></div>
-        <div class="pub"><div class="pub-title">Cheminformatics analysis of molecular datasets of transcription factors associated with quorum sensing in <em>Pseudomonas aeruginosa</em> <span class="pub-yr">2022</span></div><div class="pub-auth"><strong>Victoria-Muñoz, F.</strong>; Sánchez-Cruz, N.; Medina-Franco, J. L.; Lopez-Vallejo, F.</div><div class="pub-jour">RSC Advances · 12, 6783–6790</div><div class="pub-doi"><a href="https://doi.org/10.1039/D1RA08352J" target="_blank" rel="noopener">10.1039/D1RA08352J</a></div></div>
+        <a class="pub" href="https://doi.org/10.1021/acs.jcim.5c01490" target="_blank" rel="noopener"><div class="pub-title">SMARTDock: a toolkit for the automated development of target-specific scoring functions using bioactivity data <span class="pub-yr">2026</span></div><div class="pub-auth"><strong>Victoria-Muñoz, F.</strong>; Menke, J.; Sánchez-Cruz, N.; Koch, O.</div><div class="pub-jour">Journal of Chemical Information and Modeling</div><div class="pub-doi">10.1021/acs.jcim.5c01490</div></a>
+        <a class="pub" href="https://doi.org/10.3390/jof12010052" target="_blank" rel="noopener"><div class="pub-title">Antifungal potential of <em>Diaporthe</em> sp. endophytes from Antillean avocado against <em>Fusarium</em> spp.: from organic extracts to in silico chitin synthase inhibition <span class="pub-yr">2026</span></div><div class="pub-auth">Robayo-Medina A.T.; Camargo-Jimenez K.M.; <strong>Victoria-Muñoz F.</strong>; Delgado-Avila W.; Cuca-Suarez L.E.; Ávila-Murillo M.</div><div class="pub-jour">Journal of Fungi · 12, 52</div><div class="pub-doi">10.3390/jof12010052</div></a>
+        <a class="pub" href="https://doi.org/10.1021/acs.jafc.5c03553" target="_blank" rel="noopener"><div class="pub-title">Harnessing the potential of natural products in insecticide discovery: a cheminformatics approach <span class="pub-yr">2025</span></div><div class="pub-auth"><strong>Victoria-Muñoz F.</strong>; Torres-García A.; Koch O.; Sierra C.; Sánchez-Cruz N.</div><div class="pub-jour">Journal of Agricultural and Food Chemistry · 73, 52, 32995–33004</div><div class="pub-doi">10.1021/acs.jafc.5c03553</div></a>
+        <a class="pub" href="https://doi.org/10.1186/s13321-025-01107-z" target="_blank" rel="noopener"><div class="pub-title">Efficient decoy selection to improve virtual screening using machine learning models <span class="pub-yr">2025</span></div><div class="pub-auth"><strong>Victoria-Muñoz, F.</strong>; Menke, J.; Sanchez-Cruz, N. et al.</div><div class="pub-jour">Journal of Cheminformatics · 17, 165</div><div class="pub-doi">10.1186/s13321-025-01107-z</div></a>
+        <a class="pub" href="https://doi.org/10.1039/D1RA08352J" target="_blank" rel="noopener"><div class="pub-title">Cheminformatics analysis of molecular datasets of transcription factors associated with quorum sensing in <em>Pseudomonas aeruginosa</em> <span class="pub-yr">2022</span></div><div class="pub-auth"><strong>Victoria-Muñoz, F.</strong>; Sánchez-Cruz, N.; Medina-Franco, J. L.; Lopez-Vallejo, F.</div><div class="pub-jour">RSC Advances · 12, 6783–6790</div><div class="pub-doi">10.1039/D1RA08352J</div></a>
       </div>
 
       <div class="ssh dim">In preparation</div>
