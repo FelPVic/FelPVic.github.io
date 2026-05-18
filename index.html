@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="auto" data-lang="en">
+<html lang="es" data-theme="auto" data-lang="es">
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 <title>Felipe Victoria-Muñoz</title>
-<meta name="description" content="Medicinal chemist and cheminformatics researcher. PhD Magna Cum Laude in Medicinal Chemistry and CADD."/>
+<meta name="description" content="Químico farmacéutico y científico computacional. PhD Magna Cum Laude. Modelado PBPK, bioequivalencia computacional y consultoría regulatoria para la industria farmacéutica."/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
 <style>
@@ -81,6 +81,8 @@ section:first-child{padding-top:4.5rem}
 .int-card:hover{border-color:var(--accent2);box-shadow:0 0 0 1px var(--accent2);text-decoration:none}
 .int-card.no-link{cursor:default}
 .int-card.no-link:hover{border-color:var(--bdr);box-shadow:none}
+.int-card.highlight{border-color:var(--accent);box-shadow:0 0 0 1px rgba(59,130,246,.25)}
+.int-card.highlight:hover{border-color:var(--accent2);box-shadow:0 0 0 1px var(--accent2)}
 .int-icon{font-size:1.15rem;margin-bottom:.28rem}
 .int-title{font-size:.84rem;font-weight:500;margin-bottom:.2rem}
 .int-desc{font-size:.72rem;color:var(--muted);line-height:1.55}
@@ -96,6 +98,7 @@ section:first-child{padding-top:4.5rem}
 .badge{display:inline-block;font-size:.62rem;font-family:'JetBrains Mono',monospace;padding:.1rem .38rem;border-radius:4px;margin-left:.32rem;vertical-align:middle}
 .badge-gold{background:#78350f;color:#fde68a}
 .badge-blue{background:#1e3a5f;color:#93c5fd}
+.badge-green{background:#14532d;color:#86efac}
 .aw-list{display:flex;flex-direction:column;gap:.55rem}
 .aw{display:flex;gap:.75rem;align-items:flex-start;padding:.72rem .9rem;background:var(--surf);border:1px solid var(--bdr);border-radius:8px;transition:border-color .15s}
 .aw:hover{border-color:var(--accent2)}
@@ -121,6 +124,7 @@ section:first-child{padding-top:4.5rem}
 .sk-label{font-size:.64rem;font-family:'JetBrains Mono',monospace;color:var(--accent);text-transform:uppercase;letter-spacing:.08em;margin-bottom:.48rem}
 .sk-chips{display:flex;flex-wrap:wrap;gap:.22rem}
 .chip{font-size:.67rem;background:var(--tag);color:var(--muted);padding:.14rem .48rem;border-radius:20px;border:1px solid var(--bdr)}
+.chip.hot{background:#1e3a5f;color:#93c5fd;border-color:#2563eb}
 .repo-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:.85rem;margin-top:.75rem}
 .repo-card{background:var(--surf);border:1px solid var(--bdr);border-radius:10px;overflow:hidden;display:flex;flex-direction:column;transition:border-color .15s}
 .repo-card:hover{border-color:var(--accent2)}
@@ -139,24 +143,34 @@ section:first-child{padding-top:4.5rem}
 .repo-lang{display:flex;align-items:center;gap:.26rem;font-size:.68rem;color:var(--muted)}
 .repo-dot{width:9px;height:9px;border-radius:50%;background:#3572A5;flex-shrink:0}
 .repo-topic{font-size:.6rem;background:var(--tag);color:var(--tag-t);padding:.09rem .38rem;border-radius:20px;font-family:'JetBrains Mono',monospace}
+/* ── Consulting cards ── */
+.svc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:.8rem;margin-bottom:1.4rem}
+.svc-card{background:var(--surf);border:1px solid var(--bdr);border-radius:10px;padding:1rem 1.1rem;transition:border-color .15s,box-shadow .15s}
+.svc-card:hover{border-color:var(--accent2);box-shadow:0 0 0 1px rgba(96,165,250,.2)}
+.svc-icon{font-size:1.3rem;margin-bottom:.4rem}
+.svc-title{font-size:.86rem;font-weight:600;margin-bottom:.3rem;color:var(--txt)}
+.svc-desc{font-size:.73rem;color:var(--muted);line-height:1.6}
+.collab-box{background:var(--surf);border:1px solid var(--accent);border-radius:10px;padding:1rem 1.2rem;font-size:.82rem;color:var(--muted);line-height:1.7;margin-top:1rem}
+.collab-box strong{color:var(--txt)}
 footer{border-top:1px solid var(--bdr);padding:1.6rem 0 2.2rem;text-align:center;font-size:.7rem;color:var(--muted2);font-family:'JetBrains Mono',monospace}
 ::-webkit-scrollbar{width:5px}::-webkit-scrollbar-track{background:var(--bg)}::-webkit-scrollbar-thumb{background:var(--bdr2);border-radius:3px}
 @media(max-width:860px){.page{grid-template-columns:175px 1fr}.sidebar{padding:1.6rem .85rem}.sb-social{display:none}}
-@media(max-width:680px){.top-bar{display:flex}.sidebar{display:none}.page{grid-template-columns:1fr}main{padding:0 1rem}section{padding:2.6rem 0 1.2rem}section:first-child{padding-top:2.2rem}.hero-top{flex-direction:column-reverse;gap:.9rem}.avatar-wrap{width:84px;height:84px}.avatar-initials{font-size:1.7rem}.mob-socials{display:flex}.tl-row{grid-template-columns:64px 1fr;gap:.5rem .75rem}.tl-date{font-size:.62rem}.int-grid{grid-template-columns:1fr 1fr}.repo-grid{grid-template-columns:1fr}}
-@media(max-width:400px){.int-grid,.sk-grid{grid-template-columns:1fr}}
+@media(max-width:680px){.top-bar{display:flex}.sidebar{display:none}.page{grid-template-columns:1fr}main{padding:0 1rem}section{padding:2.6rem 0 1.2rem}section:first-child{padding-top:2.2rem}.hero-top{flex-direction:column-reverse;gap:.9rem}.avatar-wrap{width:84px;height:84px}.avatar-initials{font-size:1.7rem}.mob-socials{display:flex}.tl-row{grid-template-columns:64px 1fr;gap:.5rem .75rem}.tl-date{font-size:.62rem}.int-grid{grid-template-columns:1fr 1fr}.repo-grid{grid-template-columns:1fr}.svc-grid{grid-template-columns:1fr}}
+@media(max-width:400px){.int-grid,.sk-grid,.svc-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 
-<div class="top-bar">
+<div class="top-bar" id="topbar">
   <span class="top-brand"><em>~/</em>FelPVic</span>
   <button class="hamburger" id="ham" onclick="toggleDrawer()" aria-label="Menu"><span></span><span></span><span></span></button>
 </div>
 
 <div class="drawer" id="drawer">
-  <a href="#home" onclick="closeDrawer()"><span lang="en">🏠 Home</span><span lang="es">🏠 Inicio</span></a>
+  <a href="#home" onclick="closeDrawer()"><span lang="es">🏠 Inicio</span><span lang="en">🏠 Home</span></a>
+  <a href="#consulting" onclick="closeDrawer()"><span lang="es">🔬 Consultoría</span><span lang="en">🔬 Consulting</span></a>
   <a href="#cv" onclick="closeDrawer()">📋 CV</a>
-  <a href="#publications" onclick="closeDrawer()"><span lang="en">📄 Publications</span><span lang="es">📄 Publicaciones</span></a>
+  <a href="#publications" onclick="closeDrawer()"><span lang="es">📄 Publicaciones</span><span lang="en">📄 Publications</span></a>
   <a href="#software" onclick="closeDrawer()">💻 Software</a>
   <div class="drawer-controls">
     <div class="trow">
@@ -165,8 +179,8 @@ footer{border-top:1px solid var(--bdr);padding:1.6rem 0 2.2rem;text-align:center
       <button class="tbtn" id="mb-light" onclick="setTheme('light')" title="Light"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="5" fill="currentColor"/><path stroke="currentColor" stroke-width="2" fill="none" d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg></button>
     </div>
     <div class="lrow">
-      <button class="lbtn active" id="mb-en" onclick="setLang('en')">EN</button>
-      <button class="lbtn" id="mb-es" onclick="setLang('es')">ES</button>
+      <button class="lbtn active" id="mb-es" onclick="setLang('es')">ES</button>
+      <button class="lbtn" id="mb-en" onclick="setLang('en')">EN</button>
     </div>
   </div>
 </div>
@@ -175,9 +189,10 @@ footer{border-top:1px solid var(--bdr);padding:1.6rem 0 2.2rem;text-align:center
   <aside class="sidebar">
     <div class="sb-brand"><em>~/</em>FelPVic</div>
     <ul class="sb-nav">
-      <li><a href="#home"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg><span lang="en">Home</span><span lang="es">Inicio</span></a></li>
+      <li><a href="#home"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg><span lang="es">Inicio</span><span lang="en">Home</span></a></li>
+      <li><a href="#consulting"><svg viewBox="0 0 24 24"><path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2v-4M9 21H5a2 2 0 01-2-2v-4m0 0h18"/></svg><span lang="es">Consultoría</span><span lang="en">Consulting</span></a></li>
       <li><a href="#cv"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>CV</a></li>
-      <li><a href="#publications"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg><span lang="en">Publications</span><span lang="es">Publicaciones</span></a></li>
+      <li><a href="#publications"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg><span lang="es">Publicaciones</span><span lang="en">Publications</span></a></li>
       <li><a href="#software"><svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>Software</a></li>
     </ul>
     <div class="sb-footer">
@@ -187,8 +202,8 @@ footer{border-top:1px solid var(--bdr);padding:1.6rem 0 2.2rem;text-align:center
         <button class="tbtn" id="sb-light" onclick="setTheme('light')" title="Light"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="5" fill="currentColor"/><path stroke="currentColor" stroke-width="2" fill="none" d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg></button>
       </div>
       <div class="lrow">
-        <button class="lbtn active" id="sb-en" onclick="setLang('en')">EN</button>
-        <button class="lbtn" id="sb-es" onclick="setLang('es')">ES</button>
+        <button class="lbtn active" id="sb-es" onclick="setLang('es')">ES</button>
+        <button class="lbtn" id="sb-en" onclick="setLang('en')">EN</button>
       </div>
       <div class="sb-social">
         <a class="sb-link" href="mailto:danielfvictoriam@gmail.com"><svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>Email</a>
@@ -200,23 +215,32 @@ footer{border-top:1px solid var(--bdr);padding:1.6rem 0 2.2rem;text-align:center
   </aside>
 
   <main>
+    <!-- ══════════════════ HOME ══════════════════ -->
     <section id="home">
       <div class="hero-top">
         <div class="hero-text">
           <div class="hero-mono">$ whoami</div>
           <h1 class="hero-name">Felipe Victoria-Muñoz</h1>
-          <div class="hero-pos"><span lang="en">Assistant Professor · Science Faculty</span><span lang="es">Profesor Asistente · Facultad de Ciencias</span></div>
-          <div class="hero-inst"><span lang="en">📍 Salesian University, Bogotá</span><span lang="es">📍 Fundación Universitaria Salesiana, Bogotá</span></div>
+          <div class="hero-pos">
+            <span lang="es">Profesor Asistente · Facultad de Ciencias</span>
+            <span lang="en">Assistant Professor · Science Faculty</span>
+          </div>
+          <div class="hero-inst">
+            <span lang="es">📍 Fundación Universitaria Salesiana, Bogotá</span>
+            <span lang="en">📍 Salesian University, Bogotá</span>
+          </div>
         </div>
         <div class="avatar-wrap">
           <img class="avatar-photo" src="assets/photo.jpg" alt="Felipe Victoria-Muñoz" onload="this.style.display='block';this.nextElementSibling.style.display='none'"/>
           <div class="avatar-initials">FV</div>
         </div>
       </div>
+
       <p class="hero-bio">
-        <span lang="en">Medicinal chemist and cheminformatics researcher focused on accelerating drug discovery through machine learning, virtual screening, and molecular modelling. PhD <em>Magna Cum Laude</em> in Medicinal Chemistry &amp; CADD from the University of Münster (Germany). Passionate about developing open, reproducible workflows at the intersection of chemistry, data science, and biology.</span>
-        <span lang="es">Químico farmaceútico e investigador en quimioinformática especializado en acelerar el descubrimiento de fármacos mediante aprendizaje automático, cribado virtual y modelamiento molecular. PhD <em>Magna Cum Laude</em> en Química Medicinal y CADD de la Universidad de Münster (Alemania). Apasionado por el desarrollo de flujos de trabajo abiertos y reproducibles en la intersección de la química, la ciencia de datos y la biología.</span>
+        <span lang="es">Químico farmacéutico y científico computacional con PhD <em>Magna Cum Laude</em> en Química Medicinal y CADD (Universidad de Münster, Alemania). Me especializo en modelado farmacocinético fisiológico (<strong style="color:var(--txt)">PBPK/PBBM</strong>), quimioinformática y diseño de fármacos asistido por computadora. Con experiencia en la industria farmacéutica colombiana (Tecnoquímicas S.A.) y formación doctoral en Europa, trabajo en la intersección entre la ciencia computacional avanzada y las necesidades regulatorias del sector farmacéutico latinoamericano — incluyendo consultoría para bioequivalencia computacional ante el INVIMA.</span>
+        <span lang="en">Pharmaceutical chemist and computational scientist with a PhD <em>Magna Cum Laude</em> in Medicinal Chemistry &amp; CADD (University of Münster, Germany). I specialize in physiologically-based pharmacokinetic modelling (<strong style="color:var(--txt)">PBPK/PBBM</strong>), cheminformatics, and computer-aided drug design. With industry experience at Tecnoquímicas S.A. and doctoral training in Europe, I work at the intersection of advanced computational science and the regulatory needs of the Latin American pharmaceutical sector — including consultancy for computational bioequivalence before INVIMA.</span>
       </p>
+
       <div class="mob-socials">
         <a class="s-btn" href="mailto:danielfvictoriam@gmail.com"><svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>Email</a>
         <a class="s-btn" href="https://github.com/FelPVic" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2A10 10 0 002 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0012 2z"/></svg>GitHub</a>
@@ -225,163 +249,229 @@ footer{border-top:1px solid var(--bdr);padding:1.6rem 0 2.2rem;text-align:center
       </div>
 
       <div class="mt">
-        <div class="sh"><span lang="en">Research interests</span><span lang="es">Intereses de investigación</span></div>
+        <div class="sh"><span lang="es">Áreas de investigación</span><span lang="en">Research interests</span></div>
         <div class="int-grid">
+          <div class="int-card highlight no-link">
+            <div class="int-icon">🧮</div>
+            <div class="int-title"><span lang="es">Modelado PBPK / PBBM</span><span lang="en">PBPK / PBBM Modelling</span></div>
+            <div class="int-desc"><span lang="es">Predicción farmacocinética mecanística para bioequivalencia virtual y soporte regulatorio ante agencias sanitarias.</span><span lang="en">Mechanistic pharmacokinetic prediction for virtual bioequivalence and regulatory support before health agencies.</span></div>
+          </div>
           <a class="int-card" href="https://doi.org/10.1186/s13321-025-01107-z" target="_blank" rel="noopener">
-            <div class="int-icon">🎯</div><div class="int-title"><span lang="en">Virtual screening</span><span lang="es">Cribado virtual</span></div>
-            <div class="int-desc"><span lang="en">Structure- and ligand-based hit identification in large compound libraries.</span><span lang="es">Identificación de compuestos activos mediante enfoques basados en estructura y ligando.</span></div>
+            <div class="int-icon">🎯</div>
+            <div class="int-title"><span lang="es">Cribado virtual</span><span lang="en">Virtual screening</span></div>
+            <div class="int-desc"><span lang="es">Identificación de compuestos activos mediante enfoques basados en estructura y ligando.</span><span lang="en">Structure- and ligand-based hit identification in large compound libraries.</span></div>
           </a>
           <a class="int-card" href="https://doi.org/10.1039/D1RA08352J" target="_blank" rel="noopener">
-            <div class="int-icon">🧪</div><div class="int-title"><span lang="en">Cheminformatics</span><span lang="es">Quimioinformática</span></div>
-            <div class="int-desc"><span lang="en">Data mining, molecular descriptors, chemical space analysis, and QSAR.</span><span lang="es">Minería de datos, descriptores moleculares, análisis del espacio químico y QSAR.</span></div>
+            <div class="int-icon">🧪</div>
+            <div class="int-title"><span lang="es">Quimioinformática</span><span lang="en">Cheminformatics</span></div>
+            <div class="int-desc"><span lang="es">Minería de datos, descriptores moleculares, análisis del espacio químico y QSAR.</span><span lang="en">Data mining, molecular descriptors, chemical space analysis, and QSAR.</span></div>
           </a>
           <a class="int-card" href="https://doi.org/10.1021/acs.jcim.5c01490" target="_blank" rel="noopener">
-            <div class="int-icon">🤖</div><div class="int-title"><span lang="en">ML in drug discovery</span><span lang="es">ML en descubrimiento de fármacos</span></div>
-            <div class="int-desc"><span lang="en">ML scoring functions, decoy selection, and deep learning for property prediction.</span><span lang="es">Funciones de puntuación ML, selección de señuelos y aprendizaje profundo para predicción de propiedades.</span></div>
+            <div class="int-icon">🤖</div>
+            <div class="int-title"><span lang="es">ML en descubrimiento de fármacos</span><span lang="en">ML in drug discovery</span></div>
+            <div class="int-desc"><span lang="es">Funciones de puntuación ML, selección de señuelos y aprendizaje profundo para predicción de propiedades.</span><span lang="en">ML scoring functions, decoy selection, and deep learning for property prediction.</span></div>
           </a>
           <a class="int-card" href="https://doi.org/10.1021/acs.jafc.5c03553" target="_blank" rel="noopener">
-            <div class="int-icon">🌿</div><div class="int-title"><span lang="en">Natural products</span><span lang="es">Productos naturales</span></div>
-            <div class="int-desc"><span lang="en">Cheminformatic analysis of NP databases for insecticide and antimicrobial discovery.</span><span lang="es">Análisis quimioinformático de bases de datos de productos naturales para descubrimiento de insecticidas y antimicrobianos.</span></div>
+            <div class="int-icon">🌿</div>
+            <div class="int-title"><span lang="es">Productos naturales</span><span lang="en">Natural products</span></div>
+            <div class="int-desc"><span lang="es">Análisis quimioinformático de bases de datos de PNs para descubrimiento de insecticidas y antimicrobianos.</span><span lang="en">Cheminformatic analysis of NP databases for insecticide and antimicrobial discovery.</span></div>
           </a>
           <a class="int-card" href="https://doi.org/10.1039/D1RA08352J" target="_blank" rel="noopener">
-            <div class="int-icon">🧬</div><div class="int-title"><span lang="en">Ligand profiling</span><span lang="es">Perfilado de ligandos</span></div>
-            <div class="int-desc"><span lang="en">Target prediction and polypharmacology for multi-target drug design.</span><span lang="es">Predicción de dianas y polifarmacología para diseño de fármacos multidiana.</span></div>
+            <div class="int-icon">🧬</div>
+            <div class="int-title"><span lang="es">Perfilado de ligandos</span><span lang="en">Ligand profiling</span></div>
+            <div class="int-desc"><span lang="es">Predicción de dianas y polifarmacología para diseño de fármacos multidiana.</span><span lang="en">Target prediction and polypharmacology for multi-target drug design.</span></div>
           </a>
           <div class="int-card no-link">
-            <div class="int-icon">⚙️</div><div class="int-title"><span lang="en">Molecular dynamics</span><span lang="es">Dinámica molecular</span></div>
-            <div class="int-desc"><span lang="en">GROMACS/AMBER simulations for protein–protein and protein–ligand systems.</span><span lang="es">Simulaciones GROMACS/AMBER para sistemas proteína–proteína y proteína–ligando.</span></div>
+            <div class="int-icon">⚙️</div>
+            <div class="int-title"><span lang="es">Dinámica molecular</span><span lang="en">Molecular dynamics</span></div>
+            <div class="int-desc"><span lang="es">Simulaciones GROMACS/AMBER para sistemas proteína–proteína y proteína–ligando.</span><span lang="en">GROMACS/AMBER simulations for protein–protein and protein–ligand systems.</span></div>
           </div>
         </div>
         <div class="tags">
-          <span class="tag">Cheminformatics</span><span class="tag">Drug Discovery</span><span class="tag">Virtual Screening</span>
-          <span class="tag">Machine Learning</span><span class="tag">Deep Learning</span><span class="tag">Ligand Profiling</span>
-          <span class="tag">CADD</span><span class="tag">Natural Products</span><span class="tag">Molecular Docking</span><span class="tag">QSAR</span>
+          <span class="tag">PBPK</span><span class="tag">PBBM</span><span class="tag">Bioequivalencia computacional</span>
+          <span class="tag">Quimioinformática</span><span class="tag">Drug Discovery</span><span class="tag">Virtual Screening</span>
+          <span class="tag">Machine Learning</span><span class="tag">CADD</span><span class="tag">Productos naturales</span><span class="tag">QSAR</span>
         </div>
       </div>
     </section>
 
     <hr class="sep"/>
 
+    <!-- ══════════════════ CONSULTING ══════════════════ -->
+    <section id="consulting">
+      <div class="sh"><span lang="es">Consultoría científica</span><span lang="en">Scientific consulting</span></div>
+
+      <p style="font-size:.84rem;color:var(--muted);line-height:1.8;margin-bottom:1.5rem">
+        <span lang="es">Ofrezco servicios de consultoría en el cruce entre la ciencia computacional avanzada y la regulación farmacéutica. Mi formación como químico farmacéutico, con experiencia en la industria colombiana y doctorado en Alemania, me permite abordar problemas regulatorios con rigor científico y conocimiento del ecosistema local.</span>
+        <span lang="en">I provide consulting services at the intersection of advanced computational science and pharmaceutical regulation. My background as a pharmaceutical chemist, with industry experience in Colombia and a doctorate from Germany, allows me to approach regulatory challenges with scientific rigor and knowledge of the local ecosystem.</span>
+      </p>
+
+      <div class="svc-grid">
+        <div class="svc-card">
+          <div class="svc-icon">🧮</div>
+          <div class="svc-title"><span lang="es">Modelado PBPK para bioequivalencia</span><span lang="en">PBPK modelling for bioequivalence</span></div>
+          <div class="svc-desc"><span lang="es">Construcción de modelos farmacocinéticos fisiológicos (PBPK/PBBM) para soportar estudios de bioequivalencia computacional (virtual BE) y expedientes ante el INVIMA. Aplicable a genéricos de liberación modificada y moléculas de índice terapéutico estrecho.</span><span lang="en">Building physiologically-based pharmacokinetic (PBPK/PBBM) models to support computational bioequivalence studies (virtual BE) and INVIMA dossiers. Applicable to modified-release generics and narrow therapeutic index molecules.</span></div>
+        </div>
+        <div class="svc-card">
+          <div class="svc-icon">📋</div>
+          <div class="svc-title"><span lang="es">Consultoría regulatoria INVIMA</span><span lang="en">INVIMA regulatory consulting</span></div>
+          <div class="svc-desc"><span lang="es">Análisis de viabilidad regulatoria para moléculas con exigencia de BE. Preparación de argumentos técnicos para bioexención BCS. Revisión crítica de expedientes de biodisponibilidad y bioequivalencia antes de su presentación ante la Sala Especializada.</span><span lang="en">Regulatory feasibility analysis for molecules requiring BE. Preparation of technical arguments for BCS-based biowaivers. Critical review of bioavailability and bioequivalence dossiers before submission to the Specialized Panel.</span></div>
+        </div>
+        <div class="svc-card">
+          <div class="svc-icon">🔬</div>
+          <div class="svc-title"><span lang="es">Predicción ADME/Tox in silico</span><span lang="en">In silico ADME/Tox prediction</span></div>
+          <div class="svc-desc"><span lang="es">Predicción computacional de propiedades farmacocinéticas y toxicológicas para soporte en el desarrollo preclínico de moléculas. Clasificación BCS, análisis de solubilidad y permeabilidad, y modelado de interacciones con transportadores.</span><span lang="en">Computational prediction of pharmacokinetic and toxicological properties to support preclinical molecule development. BCS classification, solubility and permeability analysis, and transporter interaction modelling.</span></div>
+        </div>
+        <div class="svc-card">
+          <div class="svc-icon">🌿</div>
+          <div class="svc-title"><span lang="es">Quimioinformática de productos naturales</span><span lang="en">Natural products cheminformatics</span></div>
+          <div class="svc-desc"><span lang="es">Caracterización computacional de extractos y moléculas de la biodiversidad colombiana. Análisis del espacio químico, predicción de actividad biológica y priorización de compuestos para desarrollo farmacéutico o fitoterapéutico.</span><span lang="en">Computational characterization of extracts and molecules from Colombian biodiversity. Chemical space analysis, biological activity prediction, and compound prioritization for pharmaceutical or phytotherapeutic development.</span></div>
+        </div>
+        <div class="svc-card">
+          <div class="svc-icon">🤖</div>
+          <div class="svc-title"><span lang="es">IA aplicada a la industria farmacéutica</span><span lang="en">AI applied to the pharmaceutical industry</span></div>
+          <div class="svc-desc"><span lang="es">Diseño e implementación de flujos de trabajo con machine learning para predicción de propiedades moleculares, cribado virtual y control de calidad de datos farmacéuticos. Talleres y formación in-company.</span><span lang="en">Design and implementation of machine learning workflows for molecular property prediction, virtual screening, and pharmaceutical data quality control. In-company workshops and training.</span></div>
+        </div>
+        <div class="svc-card">
+          <div class="svc-icon">📊</div>
+          <div class="svc-title"><span lang="es">Análisis farmacocinético de poblaciones</span><span lang="en">Population pharmacokinetic analysis</span></div>
+          <div class="svc-desc"><span lang="es">Modelado PK/PD para poblaciones especiales: pediátricos, pacientes con insuficiencia renal o hepática. Aplicable a estudios de ajuste de dosis y soporte regulatorio donde los ensayos in vivo son éticamente complejos.</span><span lang="en">PK/PD modelling for special populations: pediatrics, renal or hepatic impairment patients. Applicable to dose adjustment studies and regulatory support where in vivo trials are ethically complex.</span></div>
+        </div>
+      </div>
+
+      <div class="collab-box">
+        <strong><span lang="es">¿Trabaja en la industria farmacéutica o un laboratorio de genéricos en Colombia?</span><span lang="en">Working in the pharmaceutical industry or a generics laboratory in Colombia?</span></strong><br/>
+        <span lang="es">Si su empresa necesita soporte computacional para trámites de bioequivalencia, clasificación BCS, o modelado PBPK ante el INVIMA, puedo acompañar el proceso desde el diseño del estudio hasta la presentación del expediente. Escribame a <a href="mailto:danielfvictoriam@gmail.com">danielfvictoriam@gmail.com</a> o por <a href="https://linkedin.com/in/FelPVic" target="_blank" rel="noopener">LinkedIn</a>.</span>
+        <span lang="en">If your company needs computational support for bioequivalence procedures, BCS classification, or PBPK modelling before INVIMA, I can support the process from study design to dossier submission. Write to me at <a href="mailto:danielfvictoriam@gmail.com">danielfvictoriam@gmail.com</a> or via <a href="https://linkedin.com/in/FelPVic" target="_blank" rel="noopener">LinkedIn</a>.</span>
+      </div>
+    </section>
+
+    <hr class="sep"/>
+
+    <!-- ══════════════════ CV ══════════════════ -->
     <section id="cv">
-      <div class="sh"><span lang="en">Professional experience</span><span lang="es">Experiencia profesional</span></div>
+      <div class="sh"><span lang="es">Experiencia profesional</span><span lang="en">Professional experience</span></div>
       <div class="tl">
         <div class="tl-row"><div class="tl-date">2026</div><div class="tl-body">
-          <h3><span lang="en">Assistant Professor</span><span lang="es">Profesor Asistente</span> <span class="badge badge-blue"><span lang="en">current</span><span lang="es">actual</span></span></h3>
+          <h3><span lang="es">Profesor Asistente</span><span lang="en">Assistant Professor</span> <span class="badge badge-blue"><span lang="es">actual</span><span lang="en">current</span></span></h3>
           <h4>Fundación Universitaria Salesiana · Bogotá</h4>
+          <p><span lang="es">Docencia en Descubrimiento Computacional de Fármacos, Química Medicinal y Toxicología. Coordinación del programa de IA aplicada a la industria farmacéutica.</span><span lang="en">Teaching in Computational Drug Discovery, Medicinal Chemistry, and Toxicology. Coordination of the AI applied to the pharmaceutical industry programme.</span></p>
         </div></div>
         <div class="tl-row"><div class="tl-date">2022–2025</div><div class="tl-body">
           <h3>PhD Fellow</h3>
           <h4>Institute of Pharmaceutical and Medicinal Chemistry, University of Münster · Germany</h4>
-          <p><span lang="en">With Prof. Dr. O. Koch. DFG-funded research on ligand selectivity, target-specific scoring functions, and fragment-based design.</span><span lang="es">Con el Prof. Dr. O. Koch. Investigación financiada por la DFG sobre selectividad de ligandos, funciones de puntuación específicas por diana y diseño basado en fragmentos.</span></p>
+          <p><span lang="es">Con el Prof. Dr. O. Koch. Investigación financiada por la DFG sobre selectividad de ligandos, funciones de puntuación específicas por diana y diseño basado en fragmentos.</span><span lang="en">With Prof. Dr. O. Koch. DFG-funded research on ligand selectivity, target-specific scoring functions, and fragment-based design.</span></p>
         </div></div>
         <div class="tl-row"><div class="tl-date">2019–2021</div><div class="tl-body">
-          <h3><span lang="en">Research Assistant</span><span lang="es">Asistente de Investigación</span></h3>
-          <h4><span lang="en">National University of Colombia – FPIT · Bogotá</span><span lang="es">Universidad Nacional de Colombia – FPIT · Bogotá</span></h4>
-          <p><span lang="en">Cheminformatic analysis of quorum sensing inhibitors in <em>P. aeruginosa</em>.</span><span lang="es">Análisis quimioinformático de inhibidores de quorum sensing en <em>P. aeruginosa</em>.</span></p>
+          <h3><span lang="es">Asistente de Investigación</span><span lang="en">Research Assistant</span></h3>
+          <h4><span lang="es">Universidad Nacional de Colombia – FPIT · Bogotá</span><span lang="en">National University of Colombia – FPIT · Bogotá</span></h4>
+          <p><span lang="es">Análisis quimioinformático de inhibidores de quorum sensing en <em>P. aeruginosa</em>.</span><span lang="en">Cheminformatic analysis of quorum sensing inhibitors in <em>P. aeruginosa</em>.</span></p>
         </div></div>
         <div class="tl-row"><div class="tl-date">2017–2019</div><div class="tl-body">
-          <h3><span lang="en">Technological Transfer Analyst</span><span lang="es">Analista de Transferencia Tecnológica</span></h3>
+          <h3><span lang="es">Analista de Transferencia Tecnológica</span><span lang="en">Technological Transfer Analyst</span></h3>
           <h4>Tecnoquímicas S.A. · Colombia</h4>
+          <p><span lang="es">Transferencia de tecnología y desarrollo farmacéutico en el laboratorio #1 de Colombia. Participación en procesos de registro sanitario, desarrollo de formulaciones y cumplimiento de estándares BPM ante el INVIMA. Primer contacto con la intersección entre la industria farmacéutica y los métodos computacionales.</span><span lang="en">Technology transfer and pharmaceutical development at Colombia's #1 laboratory. Participation in sanitary registration processes, formulation development, and GMP compliance before INVIMA. First exposure to the intersection between the pharmaceutical industry and computational methods.</span></p>
         </div></div>
       </div>
 
-      <div class="sh mt"><span lang="en">Education</span><span lang="es">Formación académica</span></div>
+      <div class="sh mt"><span lang="es">Formación académica</span><span lang="en">Education</span></div>
       <div class="tl">
         <div class="tl-row"><div class="tl-date">2022–2026</div><div class="tl-body">
-          <h3><span lang="en">PhD Medicinal Chemistry &amp; Computational Drug Discovery</span><span lang="es">Doctorado en Química Medicinal y Descubrimiento Computacional de Fármacos</span> <span class="badge badge-gold">Magna Cum Laude</span></h3>
+          <h3><span lang="es">Doctorado en Química Medicinal y Descubrimiento Computacional de Fármacos</span><span lang="en">PhD Medicinal Chemistry &amp; Computational Drug Discovery</span> <span class="badge badge-gold">Magna Cum Laude</span></h3>
           <h4>University of Münster · Germany</h4>
-          <p><span lang="en">Advisor: Prof. Dr. Oliver Koch</span><span lang="es">Asesor: Prof. Dr. Oliver Koch</span></p>
+          <p><span lang="es">Asesor: Prof. Dr. Oliver Koch</span><span lang="en">Advisor: Prof. Dr. Oliver Koch</span></p>
         </div></div>
         <div class="tl-row"><div class="tl-date">2020–2021</div><div class="tl-body">
-          <h3><span lang="en">MSc Pharmaceutical Science</span><span lang="es">Maestría en Ciencias Farmacéuticas</span></h3>
-          <h4><span lang="en">National University of Colombia · Bogotá</span><span lang="es">Universidad Nacional de Colombia · Bogotá</span></h4>
-          <p><span lang="en">Advisor: Dr. Fabian Lopez-Vallejo</span><span lang="es">Asesor: Dr. Fabian Lopez-Vallejo</span></p>
+          <h3><span lang="es">Maestría en Ciencias Farmacéuticas</span><span lang="en">MSc Pharmaceutical Science</span></h3>
+          <h4><span lang="es">Universidad Nacional de Colombia · Bogotá</span><span lang="en">National University of Colombia · Bogotá</span></h4>
+          <p><span lang="es">Asesor: Dr. Fabian Lopez-Vallejo</span><span lang="en">Advisor: Dr. Fabian Lopez-Vallejo</span></p>
         </div></div>
         <div class="tl-row"><div class="tl-date">2011–2017</div><div class="tl-body">
-          <h3><span lang="en">BS Pharmaceutical Chemistry</span><span lang="es">Pregrado en Química Farmacéutica</span></h3>
-          <h4><span lang="en">National University of Colombia · Bogotá</span><span lang="es">Universidad Nacional de Colombia · Bogotá</span></h4>
-          <p><span lang="en">Advisor: Dr. Mary Trujillo Gonzales</span><span lang="es">Asesora: Dr. Mary Trujillo Gonzales</span></p>
+          <h3><span lang="es">Pregrado en Química Farmacéutica</span><span lang="en">BS Pharmaceutical Chemistry</span></h3>
+          <h4><span lang="es">Universidad Nacional de Colombia · Bogotá</span><span lang="en">National University of Colombia · Bogotá</span></h4>
+          <p><span lang="es">Asesora: Dr. Mary Trujillo Gonzales</span><span lang="en">Advisor: Dr. Mary Trujillo Gonzales</span></p>
         </div></div>
       </div>
 
-      <div class="sh mt"><span lang="en">Awards &amp; fellowships</span><span lang="es">Premios y becas</span></div>
+      <div class="sh mt"><span lang="es">Premios y becas</span><span lang="en">Awards &amp; fellowships</span></div>
       <div class="aw-list">
         <div class="aw"><div class="aw-ico">🏆</div><div>
           <div class="aw-title">PhD — <em>Magna Cum Laude</em></div>
           <div class="aw-meta">University of Münster · 2026</div>
         </div></div>
         <div class="aw"><div class="aw-ico">🎓</div><div>
-          <div class="aw-title"><span lang="en">MSc Scholarship — Science Faculty</span><span lang="es">Beca de auxiliar docente — Facultad de Ciencias</span></div>
-          <div class="aw-meta"><span lang="en">National University of Colombia · 2019–2021</span><span lang="es">Universidad Nacional de Colombia · 2019–2021</span></div>
+          <div class="aw-title"><span lang="es">Beca de auxiliar docente — Facultad de Ciencias</span><span lang="en">MSc Scholarship — Science Faculty</span></div>
+          <div class="aw-meta"><span lang="es">Universidad Nacional de Colombia · 2019–2021</span><span lang="en">National University of Colombia · 2019–2021</span></div>
         </div></div>
         <div class="aw"><div class="aw-ico">✈️</div><div>
-          <div class="aw-title"><span lang="en">AGRO Education Award for Student Travel</span><span lang="es">Premio AGRO de Educación para Viaje Estudiantil</span></div>
+          <div class="aw-title"><span lang="es">Premio AGRO de Educación para Viaje Estudiantil</span><span lang="en">AGRO Education Award for Student Travel</span></div>
           <div class="aw-meta">AGRO Division ACS · Bayer US LLC, Crop Science Division · 2024</div>
         </div></div>
         <div class="aw"><div class="aw-ico">🌐</div><div>
-          <div class="aw-title"><span lang="en">International Affairs Student Travel Grant</span><span lang="es">Beca de Viaje — Dirección de Relaciones Exteriores</span></div>
-          <div class="aw-meta"><span lang="en">National University of Colombia · 2020</span><span lang="es">Universidad Nacional de Colombia · 2020</span></div>
+          <div class="aw-title"><span lang="es">Beca de Viaje — Dirección de Relaciones Exteriores</span><span lang="en">International Affairs Student Travel Grant</span></div>
+          <div class="aw-meta"><span lang="es">Universidad Nacional de Colombia · 2020</span><span lang="en">National University of Colombia · 2020</span></div>
         </div></div>
       </div>
 
-      <div class="sh mt"><span lang="en">Teaching</span><span lang="es">Docencia</span></div>
+      <div class="sh mt"><span lang="es">Docencia</span><span lang="en">Teaching</span></div>
       <div class="tl">
         <div class="tl-row"><div class="tl-date">2026</div><div class="tl-body">
-          <h3><span lang="en">Organizer &amp; Lecturer — Data Science for Drug Discovery</span><span lang="es">Organizador y Docente — Ciencia de Datos para el Descubrimiento de Fármacos</span></h3>
-          <h4><span lang="en">Pharmacy Department · National University of Colombia · Bogotá</span><span lang="es">Dpto. de Farmacia · Universidad Nacional de Colombia · Bogotá</span></h4>
+          <h3><span lang="es">Organizador y Docente — Ciencia de Datos para el Descubrimiento de Fármacos</span><span lang="en">Organizer &amp; Lecturer — Data Science for Drug Discovery</span></h3>
+          <h4><span lang="es">Dpto. de Farmacia · Universidad Nacional de Colombia · Bogotá</span><span lang="en">Pharmacy Department · National University of Colombia · Bogotá</span></h4>
         </div></div>
         <div class="tl-row"><div class="tl-date">2023–2026</div><div class="tl-body">
-          <h3><span lang="en">Teaching Fellow — Computational Drug Discovery / Medicinal Chemistry / Toxicology</span><span lang="es">Docente Asistente — Descubrimiento Computacional de Fármacos / Química Medicinal / Toxicología</span></h3>
+          <h3><span lang="es">Docente — Descubrimiento Computacional de Fármacos / Química Medicinal / Toxicología</span><span lang="en">Teaching Fellow — Computational Drug Discovery / Medicinal Chemistry / Toxicology</span></h3>
           <h4>Fundación Universitaria Salesiana · Bogotá</h4>
         </div></div>
         <div class="tl-row"><div class="tl-date">2024</div><div class="tl-body">
-          <h3><span lang="en">Organizer &amp; Lecturer — 2nd International Summer School AI4MedChem</span><span lang="es">Organizador y Docente — 2ª Escuela Internacional de Verano AI4MedChem</span></h3>
+          <h3><span lang="es">Organizador y Docente — 2ª Escuela Internacional de Verano AI4MedChem</span><span lang="en">Organizer &amp; Lecturer — 2nd International Summer School AI4MedChem</span></h3>
           <h4>University of Münster · Germany</h4>
         </div></div>
         <div class="tl-row"><div class="tl-date">2023</div><div class="tl-body">
-          <h3><span lang="en">Committee Member — MICAI</span><span lang="es">Miembro del Comité — MICAI</span></h3>
-          <h4><span lang="en">Mexican International Conference on Artificial Intelligence · Mérida, Mexico</span><span lang="es">Conferencia Internacional Mexicana de Inteligencia Artificial · Mérida, México</span></h4>
+          <h3><span lang="es">Miembro del Comité — MICAI</span><span lang="en">Committee Member — MICAI</span></h3>
+          <h4><span lang="es">Conferencia Internacional Mexicana de Inteligencia Artificial · Mérida, México</span><span lang="en">Mexican International Conference on Artificial Intelligence · Mérida, Mexico</span></h4>
         </div></div>
         <div class="tl-row"><div class="tl-date">2021–2022</div><div class="tl-body">
-          <h3><span lang="en">Teaching Fellow — Medicinal Chemistry / Introduction to Pharmacy</span><span lang="es">Docente — Química Medicinal / Introducción a la Farmacia</span></h3>
-          <h4><span lang="en">University in Applied and Environmental Sciences · Bogotá</span><span lang="es">Universidad de Ciencias Aplicadas y Ambientales · Bogotá</span></h4>
+          <h3><span lang="es">Docente — Química Medicinal / Introducción a la Farmacia</span><span lang="en">Teaching Fellow — Medicinal Chemistry / Introduction to Pharmacy</span></h3>
+          <h4><span lang="es">Universidad de Ciencias Aplicadas y Ambientales · Bogotá</span><span lang="en">University in Applied and Environmental Sciences · Bogotá</span></h4>
         </div></div>
         <div class="tl-row"><div class="tl-date">2019–2020</div><div class="tl-body">
-          <h3><span lang="en">Teaching Assistant — Phytochemistry</span><span lang="es">Asistente de Cátedra — Fitoquímica</span></h3>
-          <h4><span lang="en">National University of Colombia · Bogotá</span><span lang="es">Universidad Nacional de Colombia · Bogotá</span></h4>
+          <h3><span lang="es">Asistente de Cátedra — Fitoquímica</span><span lang="en">Teaching Assistant — Phytochemistry</span></h3>
+          <h4><span lang="es">Universidad Nacional de Colombia · Bogotá</span><span lang="en">National University of Colombia · Bogotá</span></h4>
         </div></div>
       </div>
 
-      <div class="sh mt"><span lang="en">Research funding (collaborator)</span><span lang="es">Financiación de investigación (colaborador)</span></div>
+      <div class="sh mt"><span lang="es">Financiación de investigación (colaborador)</span><span lang="en">Research funding (collaborator)</span></div>
       <div class="tl">
-        <div class="tl-row"><div class="tl-date">2022–<span lang="en">now</span><span lang="es">hoy</span></div><div class="tl-body">
+        <div class="tl-row"><div class="tl-date">2022–<span lang="es">hoy</span><span lang="en">now</span></div><div class="tl-body">
           <h3>"Analysis of the selectivity and promiscuity of ligand binding for fragment-based design"</h3>
           <h4>PI: Prof. Dr. O. Koch · University of Münster</h4>
-          <p><span lang="en">Funder: Deutsche Forschungsgemeinschaft (DFG)</span><span lang="es">Financiador: Deutsche Forschungsgemeinschaft (DFG)</span></p>
+          <p><span lang="es">Financiador: Deutsche Forschungsgemeinschaft (DFG)</span><span lang="en">Funder: Deutsche Forschungsgemeinschaft (DFG)</span></p>
         </div></div>
-        <div class="tl-row"><div class="tl-date">2024–<span lang="en">now</span><span lang="es">hoy</span></div><div class="tl-body">
+        <div class="tl-row"><div class="tl-date">2024–<span lang="es">hoy</span><span lang="en">now</span></div><div class="tl-body">
           <h3>"Cacao On Capable Options for Common Agriculture Problems (COCOA)"</h3>
-          <h4>PI: Dr. C. Sierra · <span lang="en">National University of Colombia</span><span lang="es">Universidad Nacional de Colombia</span></h4>
-          <p><span lang="en">Funders: CLIMA/IE Colombia · Grupo Energía de Bogotá · Fundación Santo Domingo · USDA</span><span lang="es">Financiadores: CLIMA/IE Colombia · Grupo Energía de Bogotá · Fundación Santo Domingo · USDA</span></p>
+          <h4>PI: Dr. C. Sierra · <span lang="es">Universidad Nacional de Colombia</span><span lang="en">National University of Colombia</span></h4>
+          <p><span lang="es">Financiadores: CLIMA/IE Colombia · Grupo Energía de Bogotá · Fundación Santo Domingo · USDA</span><span lang="en">Funders: CLIMA/IE Colombia · Grupo Energía de Bogotá · Fundación Santo Domingo · USDA</span></p>
         </div></div>
         <div class="tl-row"><div class="tl-date">2020–2021</div><div class="tl-body">
           <h3>"Chemoinformatic analysis of active molecules against QS transcription factors in <em>P. aeruginosa</em>"</h3>
-          <h4>PI: Dr. F. Lopez-Vallejo · <span lang="en">National University of Colombia</span><span lang="es">Universidad Nacional de Colombia</span></h4>
-          <p><span lang="en">Funders: FPIT · National University of Colombia · Minciencias</span><span lang="es">Financiadores: FPIT · Universidad Nacional de Colombia · Minciencias</span></p>
+          <h4>PI: Dr. F. Lopez-Vallejo · <span lang="es">Universidad Nacional de Colombia</span><span lang="en">National University of Colombia</span></h4>
+          <p><span lang="es">Financiadores: FPIT · Universidad Nacional de Colombia · Minciencias</span><span lang="en">Funders: FPIT · National University of Colombia · Minciencias</span></p>
         </div></div>
       </div>
     </section>
 
     <hr class="sep"/>
 
+    <!-- ══════════════════ PUBLICATIONS ══════════════════ -->
     <section id="publications">
-      <div class="sh"><span lang="en">Publications</span><span lang="es">Publicaciones</span></div>
+      <div class="sh"><span lang="es">Publicaciones</span><span lang="en">Publications</span></div>
       <p style="font-size:.77rem;color:var(--muted);margin-bottom:1.1rem">
-        <strong style="color:var(--txt)"><span lang="en">Bold</span><span lang="es">Negrita</span></strong>
-        <span lang="en"> = D.F. Victoria-Muñoz (lead / corresponding author)</span>
+        <strong style="color:var(--txt)"><span lang="es">Negrita</span><span lang="en">Bold</span></strong>
         <span lang="es"> = D.F. Victoria-Muñoz (autor principal / correspondiente)</span>
+        <span lang="en"> = D.F. Victoria-Muñoz (lead / corresponding author)</span>
       </p>
-      <div class="ssh ok"><span lang="en">Published</span><span lang="es">Publicados</span></div>
+      <div class="ssh ok"><span lang="es">Publicados</span><span lang="en">Published</span></div>
       <div class="pub-list">
         <a class="pub" href="https://doi.org/10.1021/acs.jcim.5c01490" target="_blank" rel="noopener">
           <div class="pub-title">SMARTDock: a toolkit for the automated development of target-specific scoring functions using bioactivity data <span class="pub-yr">2026</span></div>
@@ -414,7 +504,7 @@ footer{border-top:1px solid var(--bdr);padding:1.6rem 0 2.2rem;text-align:center
           <div class="pub-doi">10.1039/D1RA08352J</div>
         </a>
       </div>
-      <div class="ssh dim"><span lang="en">In preparation</span><span lang="es">En preparación</span></div>
+      <div class="ssh dim"><span lang="es">En preparación</span><span lang="en">In preparation</span></div>
       <div class="pub-list">
         <div class="pub prep">
           <div class="pub-title"><em>In silico</em> and <em>in vitro</em> approaches for the identification of natural volatile compounds as potential insecticides <span class="pub-st">in prep · 2026</span></div>
@@ -425,18 +515,18 @@ footer{border-top:1px solid var(--bdr);padding:1.6rem 0 2.2rem;text-align:center
           <div class="pub-auth"><strong>Victoria-Muñoz, F.</strong>; Torres-García A.; Cuca-Suarez L.E.; Lopez-Vallejo F.</div>
         </div>
       </div>
-      <div class="sh mt"><span lang="en">Selected presentations</span><span lang="es">Presentaciones seleccionadas</span></div>
+      <div class="sh mt"><span lang="es">Presentaciones seleccionadas</span><span lang="en">Selected presentations</span></div>
       <div class="tl">
-        <div class="tl-row"><div class="tl-date">2026 · <span lang="en">Talk</span><span lang="es">Charla</span></div><div class="tl-body"><h3>Translational toxicology: toxins as templates for pesticide design and targeted therapies</h3><h4>COLAMA 2026 · San José, Costa Rica — <em><span lang="en">Invited</span><span lang="es">Invitado</span></em></h4></div></div>
-        <div class="tl-row"><div class="tl-date">2026 · <span lang="en">Talk</span><span lang="es">Charla</span></div><div class="tl-body"><h3>SMARTDock: a toolkit for target-specific scoring functions using bioactivity data</h3><h4>V International Symposium on Computational Molecular Sciences · Bogotá</h4></div></div>
-        <div class="tl-row"><div class="tl-date">2025 · <span lang="en">Talk</span><span lang="es">Charla</span></div><div class="tl-body"><h3>Optimizing docking with target-specific scoring functions: an end-to-end workflow</h3><h4>S-DISCO Days 2025 · Gdańsk, Poland — <em><span lang="en">Invited</span><span lang="es">Invitado</span></em></h4></div></div>
-        <div class="tl-row"><div class="tl-date">2025 · <span lang="en">Talk</span><span lang="es">Charla</span></div><div class="tl-body"><h3>Target-specific scoring functions</h3><h4>Seminario Institucional INDICASAT-AIP · Panamá — <em><span lang="en">Invited</span><span lang="es">Invitado</span></em></h4></div></div>
-        <div class="tl-row"><div class="tl-date">2024 · <span lang="en">Talk</span><span lang="es">Charla</span></div><div class="tl-body"><h3>Beyond the active: integrating decoys in ML models, PADIF case</h3><h4>ACS Fall 2024 · Denver, Colorado</h4></div></div>
-        <div class="tl-row"><div class="tl-date">2024 · <span lang="en">Talk</span><span lang="es">Charla</span></div><div class="tl-body"><h3>ML-based scoring functions: reasonable decoy selection for docking-based model creation</h3><h4>18th German Conference on Cheminformatics (GCC 2024) · Bad Soden, Germany</h4></div></div>
+        <div class="tl-row"><div class="tl-date">2026 · <span lang="es">Charla</span><span lang="en">Talk</span></div><div class="tl-body"><h3>Translational toxicology: toxins as templates for pesticide design and targeted therapies</h3><h4>COLAMA 2026 · San José, Costa Rica — <em><span lang="es">Invitado</span><span lang="en">Invited</span></em></h4></div></div>
+        <div class="tl-row"><div class="tl-date">2026 · <span lang="es">Charla</span><span lang="en">Talk</span></div><div class="tl-body"><h3>SMARTDock: a toolkit for target-specific scoring functions using bioactivity data</h3><h4>V International Symposium on Computational Molecular Sciences · Bogotá</h4></div></div>
+        <div class="tl-row"><div class="tl-date">2025 · <span lang="es">Charla</span><span lang="en">Talk</span></div><div class="tl-body"><h3>Optimizing docking with target-specific scoring functions: an end-to-end workflow</h3><h4>S-DISCO Days 2025 · Gdańsk, Poland — <em><span lang="es">Invitado</span><span lang="en">Invited</span></em></h4></div></div>
+        <div class="tl-row"><div class="tl-date">2025 · <span lang="es">Charla</span><span lang="en">Talk</span></div><div class="tl-body"><h3>Target-specific scoring functions</h3><h4>Seminario Institucional INDICASAT-AIP · Panamá — <em><span lang="es">Invitado</span><span lang="en">Invited</span></em></h4></div></div>
+        <div class="tl-row"><div class="tl-date">2024 · <span lang="es">Charla</span><span lang="en">Talk</span></div><div class="tl-body"><h3>Beyond the active: integrating decoys in ML models, PADIF case</h3><h4>ACS Fall 2024 · Denver, Colorado</h4></div></div>
+        <div class="tl-row"><div class="tl-date">2024 · <span lang="es">Charla</span><span lang="en">Talk</span></div><div class="tl-body"><h3>ML-based scoring functions: reasonable decoy selection for docking-based model creation</h3><h4>18th German Conference on Cheminformatics (GCC 2024) · Bad Soden, Germany</h4></div></div>
         <div class="tl-row"><div class="tl-date">2024 · Poster</div><div class="tl-body"><h3>Decoy selection in bioactivity classification models: exploring PADIF</h3><h4>7th RSC-CICAG/RSC-BMCS AI in Chemistry · Cambridge, UK</h4></div></div>
         <div class="tl-row"><div class="tl-date">2024 · Poster</div><div class="tl-body"><h3>ML-based scoring functions: decoy selection in bioactivity classification models</h3><h4>24th European Symposium on QSAR · Barcelona, Spain</h4></div></div>
-        <div class="tl-row"><div class="tl-date">2023 · <span lang="en">Talk</span><span lang="es">Charla</span></div><div class="tl-body"><h3>Natural volatile compounds as possible insecticides</h3><h4>ACS Fall 2023 · Virtual</h4></div></div>
-        <div class="tl-row"><div class="tl-date">2021 · <span lang="en">Talk</span><span lang="es">Charla</span></div><div class="tl-body"><h3>Key amino acid residues for agonist or antagonist activity against PqsR from <em>P. aeruginosa</em></h3><h4>ACS Spring 2021 · Virtual</h4></div></div>
+        <div class="tl-row"><div class="tl-date">2023 · <span lang="es">Charla</span><span lang="en">Talk</span></div><div class="tl-body"><h3>Natural volatile compounds as possible insecticides</h3><h4>ACS Fall 2023 · Virtual</h4></div></div>
+        <div class="tl-row"><div class="tl-date">2021 · <span lang="es">Charla</span><span lang="en">Talk</span></div><div class="tl-body"><h3>Key amino acid residues for agonist or antagonist activity against PqsR from <em>P. aeruginosa</em></h3><h4>ACS Spring 2021 · Virtual</h4></div></div>
         <div class="tl-row"><div class="tl-date">2020 · Poster</div><div class="tl-body"><h3>Cheminformatics analysis on QS transcription factor molecular datasets in <em>P. aeruginosa</em></h3><h4>EFMC-ISMC and EFMC-YMCS 2020 · Virtual</h4></div></div>
         <div class="tl-row"><div class="tl-date">2019 · Poster</div><div class="tl-body"><h3>Cheminformatics analysis of agonist and antagonist of LasR, PqsR and RhlR in <em>P. aeruginosa</em></h3><h4>XXII Latin-American Meeting on Pharmacology · Cali, Colombia</h4></div></div>
       </div>
@@ -444,22 +534,27 @@ footer{border-top:1px solid var(--bdr);padding:1.6rem 0 2.2rem;text-align:center
 
     <hr class="sep"/>
 
+    <!-- ══════════════════ SOFTWARE ══════════════════ -->
     <section id="software">
-      <div class="sh"><span lang="en">Programming &amp; software</span><span lang="es">Programación y software</span></div>
+      <div class="sh"><span lang="es">Programación y software</span><span lang="en">Programming &amp; software</span></div>
       <div class="sk-grid">
-        <div class="sk-group"><div class="sk-label"><span lang="en">Languages</span><span lang="es">Lenguajes</span></div><div class="sk-chips"><span class="chip">Python (advanced)</span><span class="chip">R (basic)</span><span class="chip">Bash</span></div></div>
-        <div class="sk-group"><div class="sk-label"><span lang="en">Cheminformatics</span><span lang="es">Quimioinformática</span></div><div class="sk-chips"><span class="chip">RDKit</span><span class="chip">Datamol</span><span class="chip">Molfeat</span><span class="chip">OpenBabel</span><span class="chip">Biopython</span><span class="chip">PyRosetta</span></div></div>
-        <div class="sk-group"><div class="sk-label"><span lang="en">Machine learning</span><span lang="es">Aprendizaje automático</span></div><div class="sk-chips"><span class="chip">Scikit-learn</span><span class="chip">PyTorch</span><span class="chip">TensorFlow</span><span class="chip">DeepChem</span><span class="chip">PyCaret</span></div></div>
-        <div class="sk-group"><div class="sk-label"><span lang="en">Molecular modelling</span><span lang="es">Modelamiento molecular</span></div><div class="sk-chips"><span class="chip">CCDC / GOLD</span><span class="chip">MOE</span><span class="chip">AutoDock</span><span class="chip">AutoDock Vina</span></div></div>
-        <div class="sk-group"><div class="sk-label"><span lang="en">Molecular dynamics</span><span lang="es">Dinámica molecular</span></div><div class="sk-chips"><span class="chip">GROMACS</span><span class="chip">AMBER</span><span class="chip">Desmond</span></div></div>
-        <div class="sk-group"><div class="sk-label"><span lang="en">Dev tools</span><span lang="es">Herramientas</span></div><div class="sk-chips"><span class="chip">Docker</span><span class="chip">Git</span><span class="chip">Jupyter</span><span class="chip">Linux / Ubuntu</span></div></div>
+        <div class="sk-group"><div class="sk-label"><span lang="es">Lenguajes</span><span lang="en">Languages</span></div><div class="sk-chips"><span class="chip">Python (advanced)</span><span class="chip">R (basic)</span><span class="chip">Bash</span></div></div>
+        <div class="sk-group">
+          <div class="sk-label"><span lang="es">PBPK / Farmacocinética</span><span lang="en">PBPK / Pharmacokinetics</span></div>
+          <div class="sk-chips"><span class="chip hot">GastroPlus</span><span class="chip hot">PK-Sim</span><span class="chip hot">SimCYP</span><span class="chip">PKPy</span></div>
+        </div>
+        <div class="sk-group"><div class="sk-label"><span lang="es">Quimioinformática</span><span lang="en">Cheminformatics</span></div><div class="sk-chips"><span class="chip">RDKit</span><span class="chip">Datamol</span><span class="chip">Molfeat</span><span class="chip">OpenBabel</span><span class="chip">Biopython</span><span class="chip">PyRosetta</span></div></div>
+        <div class="sk-group"><div class="sk-label"><span lang="es">Aprendizaje automático</span><span lang="en">Machine learning</span></div><div class="sk-chips"><span class="chip">Scikit-learn</span><span class="chip">PyTorch</span><span class="chip">TensorFlow</span><span class="chip">DeepChem</span><span class="chip">PyCaret</span></div></div>
+        <div class="sk-group"><div class="sk-label"><span lang="es">Modelamiento molecular</span><span lang="en">Molecular modelling</span></div><div class="sk-chips"><span class="chip">CCDC / GOLD</span><span class="chip">MOE</span><span class="chip">AutoDock</span><span class="chip">AutoDock Vina</span></div></div>
+        <div class="sk-group"><div class="sk-label"><span lang="es">Dinámica molecular</span><span lang="en">Molecular dynamics</span></div><div class="sk-chips"><span class="chip">GROMACS</span><span class="chip">AMBER</span><span class="chip">Desmond</span></div></div>
+        <div class="sk-group"><div class="sk-label"><span lang="es">Herramientas</span><span lang="en">Dev tools</span></div><div class="sk-chips"><span class="chip">Docker</span><span class="chip">Git</span><span class="chip">Jupyter</span><span class="chip">Linux / Ubuntu</span></div></div>
       </div>
-      <div class="sh mt"><span lang="en">Open-source repositories</span><span lang="es">Repositorios de código abierto</span></div>
+      <div class="sh mt"><span lang="es">Repositorios de código abierto</span><span lang="en">Open-source repositories</span></div>
       <div class="repo-grid">
         <div class="repo-card">
           <div class="repo-img-wrap">
             <img class="repo-img" src="assets/smartdock.png" alt="SMARTDock workflow" onload="this.style.display='block';this.nextElementSibling.style.display='none'"/>
-            <div class="repo-ph"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg><span>Upload: assets/smartdock.png</span></div>
+            <div class="repo-ph"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg><span>assets/smartdock.png</span></div>
           </div>
           <div class="repo-body">
             <div class="repo-hdr">
@@ -468,8 +563,8 @@ footer{border-top:1px solid var(--bdr);padding:1.6rem 0 2.2rem;text-align:center
               <a class="repo-link" href="https://github.com/kochgroup/smartdock" target="_blank" rel="noopener">View ↗</a>
             </div>
             <div class="repo-desc">
-              <span lang="en"><strong style="color:var(--txt)">SMARTDock</strong> — automated toolkit for building target-specific scoring functions using ChEMBL bioactivity data, GOLD docking, and ML classifiers via PADIF. Runs as a Docker container.</span>
               <span lang="es"><strong style="color:var(--txt)">SMARTDock</strong> — herramienta automatizada para construir funciones de puntuación específicas por diana usando datos de bioactividad de ChEMBL, docking con GOLD y clasificadores ML mediante PADIF. Funciona como contenedor Docker.</span>
+              <span lang="en"><strong style="color:var(--txt)">SMARTDock</strong> — automated toolkit for building target-specific scoring functions using ChEMBL bioactivity data, GOLD docking, and ML classifiers via PADIF. Runs as a Docker container.</span>
             </div>
             <div class="repo-meta"><span class="repo-lang"><span class="repo-dot"></span> Python</span><span class="repo-topic">virtual-screening</span><span class="repo-topic">CADD</span><span class="repo-topic">Docker</span></div>
           </div>
@@ -477,7 +572,7 @@ footer{border-top:1px solid var(--bdr);padding:1.6rem 0 2.2rem;text-align:center
         <div class="repo-card">
           <div class="repo-img-wrap">
             <img class="repo-img" src="assets/padif.png" alt="PADIF-wf workflow" onload="this.style.display='block';this.nextElementSibling.style.display='none'"/>
-            <div class="repo-ph"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg><span>Upload: assets/padif.png</span></div>
+            <div class="repo-ph"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg><span>assets/padif.png</span></div>
           </div>
           <div class="repo-body">
             <div class="repo-hdr">
@@ -486,8 +581,8 @@ footer{border-top:1px solid var(--bdr);padding:1.6rem 0 2.2rem;text-align:center
               <a class="repo-link" href="https://github.com/kochgroup/PADIF-wf" target="_blank" rel="noopener">View ↗</a>
             </div>
             <div class="repo-desc">
-              <span lang="en"><strong style="color:var(--txt)">PADIF</strong> — Python workflow for benchmarking decoy selection in ML-based virtual screening. Three strategies: ZINC15, dark chemical matter, and docking data augmentation. Associated with <em>J. Cheminform.</em> 17, 165 (2025).</span>
               <span lang="es"><strong style="color:var(--txt)">PADIF</strong> — flujo de trabajo en Python para comparar estrategias de selección de señuelos en cribado virtual basado en ML. Tres estrategias: ZINC15, materia química oscura y aumento de datos por docking. Asociado con <em>J. Cheminform.</em> 17, 165 (2025).</span>
+              <span lang="en"><strong style="color:var(--txt)">PADIF</strong> — Python workflow for benchmarking decoy selection in ML-based virtual screening. Three strategies: ZINC15, dark chemical matter, and docking data augmentation. Associated with <em>J. Cheminform.</em> 17, 165 (2025).</span>
             </div>
             <div class="repo-meta"><span class="repo-lang"><span class="repo-dot"></span> Python</span><span class="repo-topic">decoy-selection</span><span class="repo-topic">PADIF</span><span class="repo-topic">ML</span></div>
           </div>
@@ -510,13 +605,13 @@ function applyTheme(t){
   document.documentElement.setAttribute('data-theme',t);
   ['dark','auto','light'].forEach(k=>{['sb','mb'].forEach(p=>{const b=document.getElementById(p+'-'+k);if(b)b.classList.toggle('active',k===t)})});
 }
-const savedLang = localStorage.getItem('lang') || 'en';
+const savedLang = localStorage.getItem('lang') || 'es';
 applyLang(savedLang);
 function setLang(l){localStorage.setItem('lang',l);applyLang(l);closeDrawer()}
 function applyLang(l){
   document.documentElement.setAttribute('data-lang',l);
   document.documentElement.setAttribute('lang',l);
-  ['sb','mb'].forEach(p=>{['en','es'].forEach(k=>{const b=document.getElementById(p+'-'+k);if(b)b.classList.toggle('active',k===l)})});
+  ['sb','mb'].forEach(p=>{['es','en'].forEach(k=>{const b=document.getElementById(p+'-'+k);if(b)b.classList.toggle('active',k===l)})});
 }
 function toggleDrawer(){const d=document.getElementById('drawer');const h=document.getElementById('ham');const open=d.classList.toggle('open');h.classList.toggle('open',open);document.body.style.overflow=open?'hidden':''}
 function closeDrawer(){document.getElementById('drawer').classList.remove('open');document.getElementById('ham').classList.remove('open');document.body.style.overflow=''}
